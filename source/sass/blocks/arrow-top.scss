@@ -1,0 +1,29 @@
+.arrow-top {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-align: center;
+}
+
+.arrow-top__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $color-white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(270deg);
+  margin-bottom: 12px;
+
+  svg {
+    position: relative;
+    stroke: #a3a5a7;
+    stroke-width: 1px;
+    fill: none;
+  }
+}

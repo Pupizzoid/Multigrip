@@ -1,0 +1,13 @@
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+$color-blue: #273247;
+$color-red:  #cd392b;
+$color-skyblue: #388de5;
+$color-orange: #f1b91e;
+$color-green: #7ab01a;
+$color-invisible: rgba(256, 256, 256, 0.01);
+$color-white: #ffffff;

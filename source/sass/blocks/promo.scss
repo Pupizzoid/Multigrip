@@ -1,0 +1,59 @@
+.promo {
+  padding-top: 30px;
+  padding-bottom: 109px;
+  background: url("../../img/card-bg.png") no-repeat right top;
+  background-size: auto;
+
+  @media(min-width: 1200px) {
+    background: url("../../img/card-bg-desktop.png") no-repeat right top;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 114px;
+      height: 129px;
+      background: url("../../img/sheet-left-top.png") no-repeat;
+    }
+
+    &--candy {
+      &::before {
+        width: 151px;
+        height: 252px;
+        top: 0;
+        background: url("../../img/card-candy-lemon.png") no-repeat;
+      }
+    }
+  }
+}
+
+.promo__btn-wrapper {
+  margin-bottom: 59px;
+}
+
+.promo__image {
+  margin: 0  auto;
+  width: 512px;
+}
+
+@media(min-width: 768px) {
+
+  .promo {
+    padding-bottom: 156;
+  }
+
+  .promo__content-wrapper {
+    width: 570px;
+  }
+
+  .promo__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}

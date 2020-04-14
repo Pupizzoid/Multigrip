@@ -1,0 +1,103 @@
+.points {
+  @include list-reset;
+  padding: 54px 0;
+
+  @media(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: 1200px) {
+    width: min-content;
+    padding: 0;
+  }
+}
+
+.points__item {
+  width: 370px;
+  border-radius: 100px;
+  background-color: #f9fbfe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  @media(min-width: 768px) {
+    width: 339px;
+    margin-bottom: 20px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    width: 370px;
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.points__description {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  font-size: 18px;
+  display: block;
+
+  @media(min-width: 768px) {
+    width: 199px;
+  }
+}
+
+.points__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #eef3f9;
+  position: relative;
+
+  &--icon-temperature {
+    background: url("../../img/icon-temperature.png") no-repeat center;
+  }
+
+  &--icon-pain {
+    background: url("../../img/icon-pain.png") no-repeat center;
+  }
+
+  &--icon-immunity {
+    background: url("../../img/icon-immunity.png") no-repeat center;
+  }
+
+  &--icon-nose {
+    background: url("../../img/icon-nose.png") no-repeat center;
+  }
+}
+
+.points__item.active {
+  .points__image {
+    border-color: $color-red;
+  }
+
+  .points__description {
+    color: $color-red;
+  }
+}

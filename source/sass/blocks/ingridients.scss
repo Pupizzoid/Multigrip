@@ -1,0 +1,186 @@
+.ingridients {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  @media(min-width: 1200px) {
+    width: 712px;
+
+    &--small {
+      width: 801px;
+      justify-content: stretch;
+      .ingridients__item {
+        width: 263px;
+        padding: 62px 0;
+        padding-left: 110px;
+
+        &:nth-child(3n+2) {
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+      }
+    }
+
+    &--icon {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -35px;
+        left: 81px;
+        width: 100px;
+        height: 35px;
+        background: url("../../img/card-rosehip.png") no-repeat;
+        background-position: top;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: -281px;
+        width: 243px;
+        height: 254px;
+        background: url("../../img/icon-ehin.png") no-repeat;
+      }
+    }
+  }
+}
+
+.ingridients__item {
+  width: 49.4%;
+  padding: 62px 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: left;
+  border-radius: 6px;
+  padding-left: 110px;
+  background-size: 100%;
+  background-position: left;
+  margin-bottom: 6px;
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  &.hide {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    display: none;
+
+    @media(min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &--icon-honey {
+    background: #EEF1F5  url("../../img/icon-honey.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-horseradish {
+    background: #EEF1F5  url("../../img/icon-horseradish.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-eucalyptus {
+    background:#EEF1F5 url("../../img/icon-eucalyptus.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-lemon {
+    background: #EEF1F5 url("../../img/icon-lemon.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-thyme {
+    background: #EEF1F5  url("../../img/icon-thyme.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-mint {
+    background: #EEF1F5  url("../../img/icon-mint.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-rose-hip {
+    background: #EEF1F5  url("../../img/icon-rose-hip.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-sage {
+    background: #EEF1F5  url("../../img/icon-sage.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-ginger {
+    background: #EEF1F5  url("../../img/icon-ginger.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-violet {
+    background: #EEF1F5  url("../../img/icon-violet.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-echinacea {
+    background: #EEF1F5  url("../../img/icon-echinacea.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-inden {
+    background: #EEF1F5  url("../../img/icon-inden.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-hedera {
+    background: #EEF1F5  url("../../img/icon-hedera.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-blueberries {
+    background: #EEF1F5  url("../../img/icon-blueberries.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-altaea {
+    background: #EEF1F5  url("../../img/icon-altaea.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  &--icon-tussilago{
+    background: #EEF1F5  url("../../img/icon-tussilago.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  @media(min-width: 768px) {
+    padding-left: 153px;
+  }
+
+  @media(min-width: 1200px) {
+    width: 352px;
+    margin-bottom: 8px;
+    padding-top: 87px;
+    padding-bottom: 87px;
+  }
+}

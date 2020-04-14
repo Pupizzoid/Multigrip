@@ -1,0 +1,80 @@
+.products {
+  @media(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    margin: 0 auto;
+    align-items: baseline;
+  }
+
+  @media(min-width: 1200px) {
+    width: auto;
+    padding-left: 39px;
+  }
+}
+
+.products__card {
+  max-width: 332px;
+  margin: 0 auto;
+  margin-bottom: 74px;
+  display: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media(min-width: 768px) {
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    width: 48%;
+    display: block;
+
+    &--right {
+      text-align: right;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 74px;
+    }
+
+    &:first-child {
+      order: -1;
+    }
+
+    &:nth-child(3) {
+      order: 0;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+  }
+}
+
+.products__card.choice {
+  display: block;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: -8px 2px 10px rgba(249, 50, 53, 0.3);
+    background: $color-red  url("../../img/vector_1.png")  no-repeat center;
+    right: 0;
+    top: -6px;
+    z-index: 3;
+  }
+}

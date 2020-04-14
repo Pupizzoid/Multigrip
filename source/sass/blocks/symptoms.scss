@@ -1,0 +1,105 @@
+.symptoms {
+  padding-bottom: 163px;
+  padding-top: 100px;
+  position: relative;
+  background: url("../../img/body-bg-mobile.png") no-repeat;
+  background-size: cover;
+
+  @media(min-width: 768px) {
+    background: url("../../img/body-bg-tablet.png") no-repeat;
+    background-size: 100%;
+  }
+
+  @media(min-width: 1200px) {
+    background:  url("../../img/bg-index-desktop.png") no-repeat top;
+    background-size: cover;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      filter: blur(10px);
+    }
+  
+    &::after {
+      top: 32px;
+      width: 161px;
+      height: 285px;
+      background: url("../../img/sheet-index-bg.png") no-repeat;
+    }
+  
+    
+    &::before {
+      top: -1px;
+      right: 30px;
+      width: 122px;
+      height: 145px;
+      background: url("../../img/berry-desktop.png") no-repeat;
+    }
+  }
+  
+  .symptoms__bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @media(min-width: 1200px) {
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        filter: blur(10px);
+      }
+    
+      &::before {
+        top: 629px;
+        width: 84px;
+        height: 84px;
+        background: url("../../img/berry-index-desctop.png") no-repeat;
+      }
+    
+      &::after {
+       bottom: -15px;
+        right: 0;
+        width: 99px;
+        height: 325px;
+        background: url("../../img/lemon-index-desctop.png") no-repeat;
+      }
+    }
+  }
+}
+
+
+.symptoms__aside {
+  display: none;
+}
+
+@media(min-width: 1200px) {
+  .symptoms__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .symptoms__aside {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: $color-blue;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+
+  .symptoms__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 135px;
+  }
+}
+

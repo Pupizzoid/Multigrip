@@ -1,0 +1,126 @@
+.adventures {
+  padding-bottom: 154px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -67px;
+    right: 0;
+    width: 191px;
+    height: 179px;
+    background: url("../../img/sheet-single-card.png") no-repeat;
+    background-position: center;
+
+    @media(min-width: 1200px) {
+      top: 433px;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    &--icon-position {
+      &::after {
+        right: 0;
+        top: -131px;
+      }
+    }
+  }
+}
+
+.adventures__list {
+  @include list-reset;
+  padding-top: 56px;
+
+  @media(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media(min-width: 1200px) {
+    width: 770px;
+    padding: 0;
+  }
+
+  &--tab-yellow {
+
+    .adventures__item {
+      &::before {
+        background: url("../../img/tab-circle-yellow.png") no-repeat;
+      }
+    }
+  }
+
+  &--tab-green {
+
+    .adventures__item {
+      &::before {
+        background: url("../../img/tab-circle-green.png") no-repeat;
+      }
+    }
+  }
+
+  &--tab-cup {
+
+    .adventures__item {
+      &::before {
+        width: 38px;
+        height: 31px;
+        background: url("../../img/tab-cup.png") no-repeat;
+      }
+    }
+  }
+
+  &--tab-berry {
+
+    .adventures__item {
+      &::before {
+        width: 32px;
+        height: 33px;
+        background: url("../../img/tab-berry.png") no-repeat;
+      }
+    }
+  }
+
+  &--tab-drop {
+
+    .adventures__item {
+      &::before {
+        width: 32px;
+        height: 33px;
+        background: url("../../img/tab-drop.png") no-repeat;
+      }
+    }
+  }
+}
+
+.adventures__item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #646e80;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media(min-width: 768px) {
+    width: 47%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .adventures__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}

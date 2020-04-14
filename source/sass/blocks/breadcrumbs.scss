@@ -1,0 +1,29 @@
+.breadcrumbs {
+  @include list-reset;
+  display: flex;
+  margin-bottom: 53px;
+}
+
+.breadcrumbs__link {
+  color: $color-blue;
+  font-size: 14px;
+
+  &.active {
+    color: #8f9cb5;
+    font-weight: 700;
+  }
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 9px;
+    display: inline-block;
+    background: url("../../img/Vector_9.png") no-repeat center;
+  }
+}
+
+.breadcrumbs__link.active {
+  &::after {
+    display: none;
+  }
+}

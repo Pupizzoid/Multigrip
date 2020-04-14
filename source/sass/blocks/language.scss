@@ -1,0 +1,32 @@
+.language {
+  display: none;
+  position: relative;
+  
+  &::after {
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: #8f9cb5;
+  }
+
+  @media(min-width: 1200px) {
+    display: flex;
+    width: 64px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #8f9cb5;
+
+    &:focus,
+    &:hover,
+    &.active {
+      color: $color-red;
+    }
+  }
+}

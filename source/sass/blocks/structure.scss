@@ -1,0 +1,35 @@
+.structure {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 0;
+    width: 115px;
+    height: 154px;
+    background: url("../../img/lemon-single-card.png") no-repeat;
+    z-index: -1;
+
+    @media(min-width: 1200px) {
+      width: 129px;
+      top:-174px;
+      height: 313px;
+      background: url("../../img/card-sheet-left.png") no-repeat;
+    }
+  }
+}
+
+.structure__wrapper {
+  padding-top: 46px;
+  padding-bottom: 110px;
+}
+
+@media(min-width: 1200px) {
+  .structure__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}

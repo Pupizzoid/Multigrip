@@ -1,0 +1,70 @@
+.ask {
+  padding-bottom: 120px;
+
+  @media(min-width: 1200px) {
+    padding-bottom: 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: -80px;
+      top: -118px;
+      display: block;
+      width: 270px;
+      height: 221px;
+      background: url("../../img/flower-ask.png") no-repeat;
+    }
+  }
+}
+
+.ask__wrapper {
+  padding: 60px 40px 66px 40px;
+  background: url("../../img/block-ask-bg-mobile.png") no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  z-index: 2;
+
+  @media(min-width: 768px) {
+    background: url("../../img/ask-bg-tablet.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 380px;
+      height: 329px;
+      background: url("../../img/ask-bg-bear.png"), url("../../img/ask-bg-ball.png");
+      background-repeat: no-repeat;
+      background-position: top right, bottom right;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    padding-top: 83px;
+    padding-bottom: 88px;
+    background: url("../../img/ask-bg-desktop.png") no-repeat;
+    background-size: 100%;
+
+    &::after {
+      width: 539px;
+      height: 412px;
+      background: url("../../img/ask-bear-desktop.png"), url("../../img/ask-ball-desktop.png");
+      background-repeat: no-repeat;
+      background-position: top right, bottom right;
+    }
+  }
+}
+
+.ask__info {
+  width: 284px;
+
+  @media(min-width: 768px) {
+    width: 385px;
+  }
+}

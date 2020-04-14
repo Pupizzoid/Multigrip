@@ -1,0 +1,87 @@
+.age {
+  width: 60px;
+  padding: 5px 0;
+  display: block;
+  font-size: 18px;
+  color: $color-blue;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+
+  &--border {
+    border: 1px solid $color-blue;
+  }
+
+  &--background {
+    background: $color-blue;
+  }
+
+  &--absolute {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+
+  &--margin {
+    margin-bottom: 25px;
+  }
+
+  &--red {
+    &.age--background {
+      background: $color-red;
+      color: $color-white;
+    }
+
+    &.age--border {
+      border-color: $color-red;
+      background: transparent;
+      color: $color-red;
+    }
+  }
+
+  &--orange {
+
+    &.age--background {
+      background: $color-orange;
+      color: $color-white;
+    }
+
+    &.age--border {
+      border-color: $color-orange;
+      background: transparent;
+      color: $color-orange;
+    }
+  }
+
+  &--green {
+    
+    &.age--background {
+      background: $color-green;
+      color: $color-white;
+    }
+
+    &.age--border {
+      border-color: $color-green;
+      background: transparent;
+      color: $color-green;
+    }
+  }
+
+  &--skyblue {
+    
+    &.age--background {
+      background: $color-skyblue;
+      color: $color-white;
+    }
+
+    &.age--border {
+      border-color: $color-skyblue;
+      background: transparent;
+      color: $color-skyblue;
+    }
+  }
+
+  &--position {
+    bottom: 0;
+  }
+}

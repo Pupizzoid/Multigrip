@@ -1,0 +1,31 @@
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu__text {
+  margin-right: 30px;
+}
+
+.mobile-menu__list {
+  cursor: pointer;
+}
+
+.mobile-menu__burger {
+  width: 40px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: $color-blue;
+  display: block;
+
+  &--short {
+    width: 26px;
+    margin: 10px 0;
+    margin-left: auto;
+  }
+}

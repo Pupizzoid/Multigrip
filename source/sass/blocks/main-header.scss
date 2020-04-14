@@ -1,0 +1,11 @@
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+
+  @media(min-width: 1200px) {
+    justify-content: stretch;
+  }
+}
